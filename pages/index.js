@@ -5,6 +5,10 @@ import {
   Heading,
   Button,
   Image,
+  Link,
+  List,
+  ListItem,
+  Icon,
   useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -12,6 +16,13 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import {
+  IoLogoInstagram,
+  IoLogoFacebook,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoDiscord
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -95,6 +106,74 @@ const Page = () => {
             Reading, Playing, Learning, Coding, Novel, Rocket, Mechanical Stuff,
             ...
           </Paragraph>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="sections-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/lokishengoku" target="_blank">
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @lokishengoku
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://facebook.com/ldtlodsiker/" target="_blank">
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoFacebook} />}
+                >
+                  @ldtlodsiker
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.instagram.com/justldt/" target="_blank">
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @justldt
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/le-duc-thuan-bb05a2220/"
+                target="_blank"
+              >
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  Linkedin
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://discordapp.com/users/584436123707768852"
+                target="_blank"
+              >
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoDiscord} />}
+                >
+                  Discord
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
