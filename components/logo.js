@@ -4,29 +4,33 @@ import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
-font-weight: bold;
-font-size: 18px;
-display: inline-flex;
-align-items: center;
-height: 30px;
-line-height: 20px;
-padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  line-height: 20px;
+  padding: 10px;
 
-&:hover img {
-  transform: rotate(20deg);
-}
+  &:hover img {
+    transform: rotate(20deg);
+  }
 `
 
 const Logo = () => {
-  const ldtImg = `/images/ldtbw32${useColorModeValue('', '-dark')}.png`
+  const ldtImg = `/images/ldtbw64${useColorModeValue('', '-dark')}.png`
 
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={ldtImg} width={20} height={20} alt='logo'/>
-          <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily={'M PLUS Rounded 1c'} fontWeight={'bold'} ml={3}>
+          <Image src={ldtImg} width={24} height={24} alt="logo" />
+          <Text
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            fontFamily={'M PLUS Rounded 1c'}
+            fontWeight={'bold'}
+            ml={3}
+          >
             Thuan Le Duc
           </Text>
         </LogoBox>

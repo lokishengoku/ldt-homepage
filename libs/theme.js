@@ -5,7 +5,7 @@ import { TriangleUpIcon } from '@chakra-ui/icons'
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode('#f0e4d8', '#202023')(props)
+      bg: mode('#f0e7db', '#202023')(props)
     }
   })
 }
