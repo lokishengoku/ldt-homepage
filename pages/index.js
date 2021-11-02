@@ -65,16 +65,16 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading as={'h3'} variant={'section-title'}>
-            Work
+            About me
           </Heading>
           <Paragraph>
             I&apos;m a mobile developer based in Vietnam with a passion for
             making interesting mobile applications and many other digital kinds
-            of stuff I want. I have several projects that have been made with
-            many languages/frameworks such as Android Java, React Native,
-            Flutter, Java Swing, Arduino C/C++, ... In my free time, I love
-            reading novels and watching MMA/Boxing. Currently, I&apos;m spending
-            my time improving my Flutter skill and studying at my university.
+            of stuff. I have several projects that have been made with many
+            languages/frameworks such as Android Java, React Native, Flutter,
+            Java Swing, Arduino C/C++, ... In my free time, I love reading
+            novels and watching MMA/Boxing. Currently, I&apos;m spending my time
+            improving my Flutter skill and studying at my university.
           </Paragraph>
           <Box align={'center'} my={4}>
             <NextLink href={'/works'}>
@@ -86,7 +86,7 @@ const Page = () => {
         </Section>
         <Section delay={0.2}>
           <Heading as={'h3'} variant={'section-title'}>
-            Bio
+            Education
           </Heading>
 
           <BioSection>

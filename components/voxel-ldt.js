@@ -73,7 +73,7 @@ const VoxelLdt = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/ldt_logo_3d_medium.glb', {
+      loadGLTFModel(scene, '/ldt_new.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
